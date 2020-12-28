@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRestaurant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ctrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <ImageView
+        android:id="@+id/imgflag"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital"
+        android:layout_below="@+id/ctrName"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region"
+        android:layout_below="@+id/capital"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/subregion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subregion"
+        android:layout_below="@+id/capital"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/region"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Population"
+        android:layout_below="@id/region"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/borders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abc"
+        android:layout_below="@id/population"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Languages"
+        android:layout_below="@id/borders"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
